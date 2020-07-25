@@ -1,0 +1,23 @@
+.header{
+    position: relative;
+    
+    margin: auto;
+    @media (min-width: 997px){
+        height: 995px;
+        width: 60%;
+    }
+    &__img{
+        background-repeat: no-repeat;
+        background-size: 100%;
+        max-height: 700px;
+        height: 300px;
+        @media (min-width: 997px){
+            height: 995px;
+        }
+    }
+    img{
+        width: 100%;
+        height: auto;
+        max-height: 645px;
+    }
+}

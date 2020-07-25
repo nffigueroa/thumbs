@@ -1,0 +1,31 @@
+.social-network{
+    border-top: dotted 1px rgb(151, 151, 151);
+    display: flex;
+    max-width: 1024px;
+    margin: auto;
+    &__item{
+        margin:  34px 5px;
+        
+        &--normal{
+            cursor: pointer;
+            font-weight: 300;
+            font-size: 12px;
+            color: rgb(51, 51, 51);
+        }
+    }
+    &__follow{
+        margin:  auto;
+        margin-right: 10px;
+        display: flex;
+        align-items: flex-start;
+        height: auto;
+        &--normal{
+            font-weight: 300;
+            font-size: 12px;
+            color: rgb(102, 102, 102);
+        }
+    }
+    &__icon{
+        margin: auto 5px;
+    }
+}

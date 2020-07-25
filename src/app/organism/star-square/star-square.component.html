@@ -1,0 +1,10 @@
+<section class="organism-square">
+    <div class="organism-square__title">
+        <span for="title" class="organism-square__title--normal">
+                Votes
+        </span>
+    </div>
+    <div class="organism-square__component">
+            <app-info-star-square [conf]="item" *ngFor="let item of config"></app-info-star-square>
+    </div>
+</section>

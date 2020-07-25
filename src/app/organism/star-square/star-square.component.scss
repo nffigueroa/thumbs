@@ -1,0 +1,28 @@
+.organism-square{
+    margin-bottom: 40px;
+    &__title{
+        margin: auto;
+        max-width: 1024px;
+        margin-bottom: 40px;
+        &--normal{
+            font-weight: 300;
+            font-size: 40px;
+            color: rgb(51, 51, 51);
+            text-align: left;
+        }
+    }
+    &__component{
+        display: grid;
+        grid-template-areas: 'first';
+        grid-gap: 40px;
+        margin: auto;
+        max-width: 495px;
+        min-width: 320px;
+        @media (min-width: 997px){
+            grid-template-areas: 'first second';
+            margin: auto;
+            width: unset;
+            max-width: 1024px;
+        }
+    }
+}
