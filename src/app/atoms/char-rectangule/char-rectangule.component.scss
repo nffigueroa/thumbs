@@ -1,0 +1,52 @@
+.chart{
+    display: flex;
+    &__first{
+        opacity: 0.7;
+        background-color: rgb(28, 187, 180);
+        height: 49px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        transition-property: width;
+        transition: 200ms ease;
+        &--normal{
+            margin-left: 9px;
+            font-weight: 300;
+            font-size: 29px;
+            color: rgb(255, 255, 255);
+        }
+    }
+    &__second{
+        opacity: 0.7;
+        background-color: rgb(255, 173, 29);
+        height: 49px;
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        transition-property: width;
+        transition: 200ms ease;
+        &--normal{
+            margin: auto;
+            margin-right: 35px;
+            font-weight: 300;
+            font-size: 29px;
+            color: rgb(255, 255, 255);
+        }
+    }
+    &__message{
+        position: absolute;
+        border-radius: 5px;
+        top: 10px;
+        right: 0;
+        transition-property: height, right;
+        transition: 500ms ease;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        &--normal{
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+}

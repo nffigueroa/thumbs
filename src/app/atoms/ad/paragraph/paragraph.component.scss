@@ -1,0 +1,14 @@
+.paragraph{
+    &__text{
+        &--normal{
+            font-weight: 300;
+            font-size: 15px;
+            color: rgb(51, 51, 51);
+            @media (min-width: 997px){
+                white-space: unset;
+                max-width: unset;
+                overflow: unset;
+            }
+        }
+    }
+}

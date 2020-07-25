@@ -1,0 +1,12 @@
+<section class="chart">
+    <div class="chart__first" [style.width]="percentageInitial + '%'">
+      <span for="positivePercent" class="chart__first--normal">
+        CLOSING IN
+      </span>
+    </div>
+    <div class="chart__second" [style.width]="percentageFinal + '%'">
+        <span for="positivePercent" class="chart__second--normal">
+            {{leftDays + ' Days'}}
+          </span>
+    </div>
+</section>

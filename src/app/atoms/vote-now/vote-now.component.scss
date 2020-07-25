@@ -1,0 +1,38 @@
+.vote-now{
+    display: flex;
+    @mixin thumb($color, $deg){
+        border: 2px solid transparent;
+        z-index: 1;
+        height: 31px;
+        width: 31px;
+        background-color: $color;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        img{
+            margin: auto;
+            transform: rotate($deg);
+        }
+    }
+    &__thumb-up{
+        @include thumb( rgb(28, 187, 180), 0);
+    }
+    &__thumb-down{
+       @include thumb(rgb(255, 173, 29), 180deg)
+    }
+    &__thumb-selected {
+        border: 2px solid white;
+    }
+    &__btn{
+        position: relative;
+        top: -2px;
+        margin-left: 10px;
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        cursor: pointer;
+    }
+    
+}
+

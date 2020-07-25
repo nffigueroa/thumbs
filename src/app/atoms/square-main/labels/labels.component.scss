@@ -1,0 +1,50 @@
+.labels{
+    &__title-one{
+        &--normal{
+            opacity: 0.74;
+            font-weight: 300;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.74);
+        }
+    }
+    &__title-main{
+        &--normal{
+             
+            font-size: 60px;
+            color: rgb(255, 255, 255);
+        }
+    }
+    &__description {
+        &--normal{
+            font-weight: 300;
+            font-size: 21px;
+            color: rgb(255, 255, 255);
+        }
+    }
+    &__more-info{
+        &--normal{
+            font-weight: 300;
+            font-size: 14px;
+            color: rgb(255, 255, 255);
+        }
+    }
+    &__disclaimer{
+        &--normal{
+            font-weight: 700;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+        }
+    }
+    &__disclaimer-right{
+        &--bold{
+            font-weight: 700;
+            font-size: 12px;
+            color: rgb(255, 255, 255);
+        }
+        &--regular{
+             
+            font-size: 12px;
+            color: rgb(255, 255, 255);
+        }
+    }
+}

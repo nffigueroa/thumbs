@@ -1,0 +1,24 @@
+.btn{
+    .button-square{
+        border: solid 1px rgb(255, 255, 255);
+        background: transparent;
+        &__text{
+             
+            font-size: 14px;
+            color: rgb(255, 255, 255);
+
+        }
+    }
+    .button-square-black{
+        border: solid 3px rgb(51, 51, 51);
+        background: transparent;
+        height: 53px;
+        width: 210px;
+        cursor: pointer;
+        span{
+            font-size: 20px;
+            color: rgb(51, 51, 51);
+        }
+    }
+    
+}

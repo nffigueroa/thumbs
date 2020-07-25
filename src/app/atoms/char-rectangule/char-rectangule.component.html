@@ -1,0 +1,21 @@
+<section class="chart" >
+  <div class="chart__first" [style.width]="positivePercent + '%'" [style.height]="mainStyle ? '80px' : ''">
+      <img *ngIf="mainStyle" src="../../../assets/img/thumb-up.svg" width="36" height="36" style="margin: auto; cursor: pointer;">
+      <img *ngIf="!mainStyle" src="../../../assets/img/thumb-up.svg" width="28" height="28" style="cursor: pointer;">
+    <span for="positivePercent" class="chart__first--normal" *ngIf="!mainStyle">
+      {{positivePercent + '%'}}
+    </span>
+  </div>
+  <div class="chart__second" [style.width]="negativePercent + '%'" [style.height]="mainStyle ? '80px' : ''">
+      <span for="positivePercent" class="chart__second--normal" *ngIf="!mainStyle">
+          {{negativePercent + '%'}}
+        </span>
+        <img *ngIf="!mainStyle" src="../../../assets/img/thumb-up.svg" width="28" height="28" style="transform: rotate(180deg); position: absolute; right: 10px; cursor: pointer;">
+      <img *ngIf="mainStyle" src="../../../assets/img/thumb-up.svg" width="36" height="36" style="transform: rotate(180deg); margin: auto; cursor: pointer;">
+  </div>
+  <div class="chart__message" [style.height]="heightMsg + '%'" [style.right]="positionMsg">
+    <span class="chart__message--normal">
+        Thank you for voting!
+    </span>
+  </div>
+</section>

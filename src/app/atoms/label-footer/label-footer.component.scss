@@ -1,0 +1,9 @@
+.label-footer{
+    &__text{
+        &--normal{
+            font-weight: 300;
+            font-size: 30px;
+            color: rgb(51, 51, 51);
+        }
+    }
+}
