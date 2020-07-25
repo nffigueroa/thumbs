@@ -1,0 +1,50 @@
+.square-main{
+   height: 435px;
+   width: 500px;
+   background-color: rgba(51, 51, 51, 0.5);
+   backdrop-filter: blur(10px);
+   position: absolute;
+   bottom: 150px;
+   left: 134px;
+   @media (max-width: 997px){
+    display: none;
+   }
+   &__title-one{
+    position: absolute;
+    left: 30px;
+    top: 40px;
+   }
+   &__title-main{
+       position: absolute;
+       top: 50px;
+       left: 30px;
+   }
+   &__description{
+       position: absolute;
+       top: 140px;
+       left: 30px;
+   }
+   &__chart{
+       position: absolute;
+       bottom: 0;
+       width: 100%;
+   }
+   .more-info{
+       display: flex;
+       position: absolute;
+       left: 30px;
+       bottom: 150px;
+       &__icon{
+           margin-right: 5px;
+       }
+       &__text{
+        text-decoration: underline;
+        text-decoration-color: white;
+       }
+   }
+   &__disclaimer{
+       position: absolute;
+       bottom: 100px;
+       left: 30px;
+   }
+}

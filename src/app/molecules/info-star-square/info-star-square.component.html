@@ -1,0 +1,30 @@
+<article class="square" >
+  <img [src]="'../../../assets/img/'+ nameStar +'.png'" class="img-bg">
+  <div [class]="getClass()">
+      <img src="../../../assets/img/thumb-up.svg" width="18px" height="18px">
+  </div>
+  <div class="square__title">
+    <app-title-square [text]="config.name"></app-title-square>
+  </div>
+  <div class="square__subtitle">
+    <app-subtitle-square [text]="config.description"></app-subtitle-square>
+  </div>
+  <div class="square__over"></div>
+  <div class="square__button">
+    <app-vote-now [star]="nameStar" (vote)="setIcon($event)"></app-vote-now>
+  </div>
+  <div class="square__chart">
+    <app-char-rectangule [calculate]="recalculatePercentages" [name]="config.nameStar" ></app-char-rectangule>
+  </div>
+  <div class="disclaimer">
+    <span class="disclaimer__bold">
+      <app-labels  [text]="config.timeAgo + ' ago'" [kindOf]="'disclaimer-right-bold'"></app-labels>
+    </span>
+    <span class="disclaimer__regular">
+      <app-labels [text]="'In '+ config.where" [kindOf]="'disclaimer-right-regular'" ></app-labels>
+    </span>
+  </div>
+  <span class="alert" [style.bottom]="alertBottom">
+    Thank you for voting!
+  </span>
+</article>

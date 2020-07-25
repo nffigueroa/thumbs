@@ -1,0 +1,10 @@
+app-remaining-chart{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+    top: -76px;
+    @media (min-width: 767px){
+        top: -50px;
+    }
+}

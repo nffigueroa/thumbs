@@ -1,0 +1,53 @@
+.bl-ad{
+    background-color: rgb(235, 235, 235);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    max-width: 1024px;
+    margin: auto;
+    margin-bottom: 30px;
+    .close-container {
+        position: absolute;
+        top: -19px;
+        right: 0px;
+        margin-top: 40px;
+        margin-right: 20px;
+        @media (min-width: 997px){
+            position: unset;
+            flex-direction: row;
+            height: 100px;
+            justify-content: space-around;
+        }
+        &__close{
+            font-weight: 300;
+            font-size: 20px;
+        }
+    }
+    @media (min-width: 997px){
+        flex-direction: row;
+        height: 100px;
+        justify-content: space-around;
+    }
+    &__title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 0;
+        @media (min-width: 997px){
+            margin-left: 20px;
+            padding: 0;
+            text-align: unset;
+            justify-content: unset;
+        }
+        
+    }
+    &__paragraph{
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        max-width: 720px;
+    }
+}
