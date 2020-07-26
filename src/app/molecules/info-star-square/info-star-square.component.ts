@@ -24,19 +24,20 @@ set conf(config: any) {
    }
   ngOnInit(): void {
   }
-  setIcon(event: any): void {
+
+  votes(event: any): void {
     let positives = Number(sessionStorage.getItem(`positiveVotes${this.config.nameStar}`));
     let negatives = Number(sessionStorage.getItem(`negativeVotes${this.config.nameStar}`));
 
     if (event.vote) {
-      positives++;
+      positives = positives + 2;
     } else {
-      negatives++;
+      negatives = negatives + 2;
     }
     sessionStorage.setItem(`positiveVotes${event.star}`, positives.toString());
     sessionStorage.setItem(`negativeVotes${event.star}`, negatives.toString());
     this.config.statusVotation = positives > negatives;
-    this.recalculatePercentages = positives + negatives;
+    this.recalculatePercentages = positives + negatives + 1;
     this.alertBottom = '10px';
     setTimeout(() => {
       this.alertBottom = '-50px';

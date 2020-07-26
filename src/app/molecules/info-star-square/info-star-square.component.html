@@ -11,7 +11,7 @@
   </div>
   <div class="square__over"></div>
   <div class="square__button">
-    <app-vote-now [star]="nameStar" (vote)="setIcon($event)"></app-vote-now>
+    <app-vote-now [star]="nameStar" (vote)="votes($event)"></app-vote-now>
   </div>
   <div class="square__chart">
     <app-char-rectangule [calculate]="recalculatePercentages" [name]="config.nameStar" ></app-char-rectangule>
