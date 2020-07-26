@@ -1,21 +1,21 @@
 <article class="square" >
   <img [src]="'../../../assets/img/'+ nameStar +'.png'" class="img-bg">
-  <div [class]="getClass()">
+  <span [class]="getClass()">
       <img src="../../../assets/img/thumb-up.svg" width="18px" height="18px">
-  </div>
-  <div class="square__title">
+  </span>
+  <section class="square__title">
     <app-title-square [text]="config.name"></app-title-square>
-  </div>
-  <div class="square__subtitle">
+  </section>
+  <section class="square__subtitle">
     <app-subtitle-square [text]="config.description"></app-subtitle-square>
-  </div>
+  </section>
   <div class="square__over"></div>
-  <div class="square__button">
+  <section class="square__button">
     <app-vote-now [star]="nameStar" (vote)="votes($event)"></app-vote-now>
-  </div>
-  <div class="square__chart">
+  </section>
+  <section class="square__chart">
     <app-char-rectangule [calculate]="recalculatePercentages" [name]="config.nameStar" ></app-char-rectangule>
-  </div>
+  </section>
   <div class="disclaimer">
     <span class="disclaimer__bold">
       <app-labels  [text]="config.timeAgo + ' ago'" [kindOf]="'disclaimer-right-bold'"></app-labels>

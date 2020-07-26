@@ -1,14 +1,14 @@
 <section class="vote-now">
-    <div *ngIf="!hideOptions" (click)="preselectOption(true)" [class]="currentSelection ? 'vote-now__thumb-up vote-now__thumb-selected' : 'vote-now__thumb-up'">
+    <span *ngIf="!hideOptions" (click)="preselectOption(true)" [class]="currentSelection ? 'vote-now__thumb-up vote-now__thumb-selected' : 'vote-now__thumb-up'">
         <img src="../../../assets/img/thumb-up.svg" width="18px" height="18px">
-    </div>´
-    <div *ngIf="!hideOptions" (click)="preselectOption(false)" [class]="!currentSelection ? 'vote-now__thumb-down vote-now__thumb-selected' : 'vote-now__thumb-down'">
+    </span>´
+    <span *ngIf="!hideOptions" (click)="preselectOption(false)" [class]="!currentSelection ? 'vote-now__thumb-down vote-now__thumb-selected' : 'vote-now__thumb-down'">
         <img src="../../../assets/img/thumb-up.svg" width="18px" height="18px">
-    </div>
-    <div *ngIf="!hideOptions" >
+    </span>
+    <span *ngIf="!hideOptions" >
         <button class="vote-now__btn" (click)="emitVote()">Vote now</button>
-    </div>
-    <div *ngIf="hideOptions" class="vote-now__vote-again" (click)="showOptions()">
+    </span>
+    <span *ngIf="hideOptions" class="vote-now__vote-again" (click)="showOptions()">
         <button class="vote-now__btn">Vote again</button>
-    </div>
+    </span>
 </section>

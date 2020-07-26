@@ -9,21 +9,21 @@
     <app-slogan [text]="'Rule of thumb.'"></app-slogan>
   </div>
   <div class="menu__tri" *ngIf="heigthList"></div>
-  <div class="menu__item" [style.height]="heigthList + 'px'">
+  <nav class="menu__item" [style.height]="heigthList + 'px'">
     <div class="menu__item--component" *ngFor="let item of items" >
       <app-item-menu [text]="item.text"></app-item-menu>
     </div>
     <div class="menu__icon">
         <img src="../../../assets/img/search-icon.svg" >
       </div>
-  </div>
-  <div class="menu__mobile" [style.height]="heigthList + 'px'">
+  </nav>
+  <nav class="menu__mobile" [style.height]="heigthList + 'px'">
     <div class="menu__mobile--component" *ngFor="let item of items" >
       <app-item-menu [text]="item.text"></app-item-menu>
     </div>
     <div class="menu__icon">
         <img src="../../../assets/img/search-icon.svg" >
       </div>
-  </div>
+  </nav>
   
 </section>
