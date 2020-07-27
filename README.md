@@ -1,4 +1,27 @@
-# ThumbsApp
+# ThumbsApp Resume
+
+The architecture in this project was driven by [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/) pattern, in order to make the components reusable.
+
+## TO RUN
+
+Before trying to run the app , you have to run :
+
+```bash
+npm install
+```
+Once it has done, run :
+
+```bash
+npm run start 
+```
+
+or
+
+```bash
+npm start
+```
+
+## ThumbsApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
 

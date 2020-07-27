@@ -6,14 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./remaining-chart.component.scss']
 })
 export class RemainingChartComponent implements OnInit {
-  leftDays = Number(sessionStorage.getItem('leftDays'));
-  initialDays = Number(sessionStorage.getItem('initialDays'));
+  leftDays: number;
+  initialDays: number;
   percentLeft = Math.round(this.leftDays * 100);
   percentRight = this.percentLeft - 100;
   constructor() {
   }
 
   ngOnInit(): void {
+    this.leftDays = Number(sessionStorage.getItem('leftDays'));
+    this.initialDays = Number(sessionStorage.getItem('initialDays'))
   }
 
   get percentageInitial(): number {
